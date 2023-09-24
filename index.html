@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sayı Tahmin Oyunu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="numbers">
+            <div class="number number1">?</div>
+            <div class="number number2">?</div>
+            <div class="number number3">?</div>
+            <div class="number number4">?</div>
+            <div class="number number5">?</div>
+            <div class="number number6">?</div>
+        </div>
+        <div class="realNumber"></div>
+        <div class="scoreAlert"></div>
+        <div class="guessNumbers">
+            <form class="guessForm">
+                <input type="text" pattern="\d" required class="guessNumber guessNumber1" maxlength="1">
+                <input type="text" pattern="\d" required class="guessNumber guessNumber2" maxlength="1">
+                <input type="text" pattern="\d" required class="guessNumber guessNumber3" maxlength="1">
+                <input type="text" pattern="\d" required class="guessNumber guessNumber4" maxlength="1">
+                <input type="text" pattern="\d" required class="guessNumber guessNumber5" maxlength="1">
+                <input type="text" pattern="\d" required class="guessNumber guessNumber6" maxlength="1">
+                <br>
+                <button type="submit" class="guessBtn">Tahmin Et</button>
+            </form>
+        </div>
+
+        <div class="scores">
+            <div class="currentScore">Geçerli Puan : 0</div>
+            <div class="highScore">En yüksek Puan : 0</div>
+        </div>
+        <form class="newGame">
+            <button type="submit">Yeni Oyuna Başla</button>
+        </form>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
